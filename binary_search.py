@@ -6,6 +6,7 @@ Run time complexity is O(log(n)) as  each time we cut our search space in half. 
 
 """
 
+
 def binanry_search(array, left, right, val):
     if left > right:
         return -1
@@ -39,4 +40,4 @@ def binanry_search_iter(array, val):
     return -1
 
 
-print(binanry_search_iter(a, val))
+print("Iteration:", binanry_search_iter(a, val))
