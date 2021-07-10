@@ -14,7 +14,6 @@ def bubble_sort_iter(array, n):
                 swap_flag = 1
         if swap_flag == 0:
             break
-    return array
 
 
 def bubble_sort_recu(array, n):
@@ -24,11 +23,11 @@ def bubble_sort_recu(array, n):
     if n > 1:
         bubble_sort_recu(array, n-1)
 
-    return array
 
-
-a = [6, 2, 24, 5, 6, 2, 1, 6, 24, 56, 2, 87, 13, 90]
-n = len(a)
-
-print("Iterative:", bubble_sort_iter(a, n))
-print("Recursive:", bubble_sort_recu(a, n))
+array = [6, 2, 24, 5, 6, 2, 1, 6, 24, 56, 2, 87, 13, 90]
+n = len(array)
+bubble_sort_iter(array, n)
+print("Iterative:", array)
+array = [6, 2, 24, 5, 6, 2, 1, 6, 24, 56, 2, 87, 13, 90]
+bubble_sort_recu(array, n)
+print("Recursive:", array)
