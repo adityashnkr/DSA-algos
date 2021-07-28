@@ -9,8 +9,8 @@ def insertion_sort_iter(array):
     for i in range(1, len(array)):
         current_element = array[i]
         sorted_element = i - 1
-        while sorted_element >= 0 and current_element > array[sorted_element]:
-            array[sorted_element+1] = array[sorted_element]
+        while sorted_element >= 0 and current_element < array[sorted_element]:
+            array[sorted_element + 1] = array[sorted_element]
             sorted_element -= 1
         array[sorted_element+1] = current_element
     return array
